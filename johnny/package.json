@@ -1,8 +1,9 @@
 {
+  "proxy": "http://localhost:3000",
   "name": "johnny",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://katayeh.github.io/kataYEH.github.io",
+  "homepage": "https://kataYEH.github.io/kataYEH.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
