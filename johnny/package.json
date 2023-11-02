@@ -2,7 +2,7 @@
   "name": "johnny",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kataYEH.github.io/johnny",
+  "homepage": "https://kataYEH.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
