@@ -1,0 +1,57 @@
+.Logo
+{
+    /* position:absolute;
+    top:50%;
+    left:50%; */
+    height: 100%;
+    width: 10rem;
+    /* transform:prespective(1000px) translate(-50%,-50%); */
+    transform:skewY(10deg);
+    transition:0.5s;
+    position: relative;
+    /* background-color: aqua; */
+    cursor: pointer;
+}
+
+.Logo:hover{
+    /* transform:prespective(1000px) translate(-50%,-50%); */
+    transform:skewY(0deg);
+  }
+  
+  .Logo span{
+    white-space: nowrap;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    margin:0;
+    padding:0;
+    text-transform:uppercase;
+    font-size:1.5rem;
+    color:#fff;
+    transform-style:preserve-3d;
+    transition:0.8s;
+  }
+  .Logo span:nth-child(1){
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+  }
+  .Logo span:nth-child(2){
+    color:var(--Blue);
+    transform:translate(-50%,-50%) skewX(-60deg);
+    left:4.85rem;
+    clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
+  }
+  
+  .Logo span:nth-child(3){
+    transform:translate(-50%,-50%) skewY(0deg);
+    left:4.7rem;
+    clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%);
+  }
+  
+  .Logo:hover span:nth-child(2), 
+  .Logo:hover span:nth-child(3){
+    transform:translate(-50%,-50%) skewX(0deg);
+    left:5rem;
+    color:#fff;
+  }
+  
