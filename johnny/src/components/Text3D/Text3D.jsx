@@ -1,9 +1,13 @@
 import React from 'react'
 import './Text3D.css'
 
-const Text3D = () => {
+const Text3D = (props) => {
+  const onClick = () => {
+    props.ToggleFullMenu(prev => !prev)
+  }
+
   return (
-    <span class="Text3D">Johnny Yeh</span>
+    <span className="Text3D" onClick={onClick}>{props.name}</span>
   )
 }
 
