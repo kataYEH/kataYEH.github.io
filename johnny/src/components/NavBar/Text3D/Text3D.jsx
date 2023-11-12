@@ -11,4 +11,8 @@ const Text3D = (props) => {
   )
 }
 
+Text3D.defaultProps = {
+  name : "No Name"
+}
+
 export default Text3D

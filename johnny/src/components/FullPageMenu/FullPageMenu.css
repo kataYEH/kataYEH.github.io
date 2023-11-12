@@ -9,4 +9,11 @@
   z-index: 99;
   margin: 0;
   /* display: none; */
+
+}
+.animate__rotateInDownLeft,
+.animate__backInLeft,
+.animate__backOutLeft
+{
+  --animate-duration: .6s;
 }
