@@ -14,12 +14,14 @@ import Content from './learn/Content';
 function App() {
 
 const [displayFullPageMenu, ToggleFullMenu] = useState(false)
+const [showingPage, setShowingPage] = useState("Home")
 
 
 return (
     <div className="App">
-      { displayFullPageMenu && <FullPageMenu ToggleFullMenu={ToggleFullMenu} />  }
+      { displayFullPageMenu && <FullPageMenu ToggleFullMenu={ToggleFullMenu} setShowingPage={setShowingPage}/>  }
       <NavBar ToggleFullMenu={ToggleFullMenu}/>
+      {showingPage}
       <Content />
       <HW1Content />
     </div>

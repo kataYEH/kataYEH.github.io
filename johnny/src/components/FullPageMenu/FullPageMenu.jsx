@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import './FullPageMenu.css'
+import CloseButton from './CloseButton';
+import MenuList from './MenuList';
 
-const FullPageMenu = ({ ToggleFullMenu }) => {
+const FullPageMenu = ({ ToggleFullMenu ,setShowingPage}) => {
   const [isAnimatingOut, setIsAnimatingOut] = useState(false);
 
   const handleButtonClick = () => {
@@ -15,11 +17,14 @@ const FullPageMenu = ({ ToggleFullMenu }) => {
 
   };
 
+
+
+  console.log(ToggleFullMenu)
+
   return (
-    <main className={`FullPageMenu animate__animated ${isAnimatingOut ? 'animate__backOutLeft' : 'animate__backInLeft'}`}>
-      <button onClick={handleButtonClick}>
-        Close
-      </button>
+    <main className={`FullPageMenu animate__animated ${isAnimatingOut ? 'animate__fadeOutTopLeft' : 'animate__fadeInTopLeft'}`}>
+      <CloseButton handleButtonClick={handleButtonClick} />
+      <MenuList setShowingPage={setShowingPage}/>
     </main>
   );
 }

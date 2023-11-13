@@ -1,0 +1,31 @@
+.MenuList
+{
+  height: 90%;
+  display: inline-flex;
+  flex-direction: column;
+  overflow: auto;
+}
+/* Style the scrollbar */
+.MenuList::-webkit-scrollbar {
+  width: 0px; /* Adjust the width as needed */
+}
+
+.MenuList::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+.MenuList:hover::-webkit-scrollbar-thumb {
+  background: #555;
+}
+.MenuList-Li
+{
+  padding: 1rem;
+  background-color: rgb(255,255,255,.1);
+  cursor: pointer;
+  color: white;
+}
+.MenuList-Li:hover
+{
+  background-color: rgb(255,255,255,.3);
+}
