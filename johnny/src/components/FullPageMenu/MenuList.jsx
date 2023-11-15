@@ -3,18 +3,28 @@ import "./MenuList.css"
 import GlitchText from './GlitchText'
 
 
-const MenuList = ({  setShowingPage }) => {
+const MenuList = ({  setShowingPage ,handleCloseMenu ,menuList}) => {
+    console.log(menuList)
     const handleShowing = (item) => {
         // 切换动画状态
         setShowingPage(item)
       };
     return (
         <main className='MenuList'>
-            <GlitchText itemName="Home" handleShowing={handleShowing} />
-            <GlitchText itemName="My Job" handleShowing={handleShowing}/>
-            <GlitchText itemName="Life" handleShowing={handleShowing} />
-            <GlitchText itemName="Side Project" handleShowing={handleShowing} />
-            <GlitchText itemName="Contect Me" handleShowing={handleShowing}/>
+             {menuList.map((itemName, index) => (
+                <GlitchText
+                key={index} // 確保每個元素都有唯一的 key
+                itemName={itemName}
+                handleShowing={handleShowing}
+                handleCloseMenu={handleCloseMenu}
+                />
+            ))}
+{/* 
+            <GlitchText itemName="Home" handleShowing={handleShowing} handleCloseMenu={handleCloseMenu}/>
+            <GlitchText itemName="My Job" handleShowing={handleShowing} handleCloseMenu={handleCloseMenu}/>
+            <GlitchText itemName="Life" handleShowing={handleShowing} handleCloseMenu={handleCloseMenu}/>
+            <GlitchText itemName="Side Project" handleShowing={handleShowing} handleCloseMenu={handleCloseMenu}/>
+            <GlitchText itemName="Contect Me" handleShowing={handleShowing} handleCloseMenu={handleCloseMenu}/> */}
 
         </main>
     )

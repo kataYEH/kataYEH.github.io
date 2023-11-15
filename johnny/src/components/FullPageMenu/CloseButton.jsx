@@ -4,9 +4,9 @@ import './CloseButton.css'
 
 
 
-export default function CloseButton({handleButtonClick}) {
+export default function CloseButton({handleCloseMenu}) {
   return (
-    <div className="close-container" onClick={handleButtonClick}>
+    <div className="close-container" onClick={handleCloseMenu}>
         <div className="leftright"></div>
         <div className="rightleft"></div>
         <label className="close">close</label>

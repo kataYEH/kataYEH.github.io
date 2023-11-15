@@ -12,18 +12,19 @@ import { useState } from 'react';
 import Content from './learn/Content';
 
 function App() {
-
+const menuList = ["Home","About","Skills","Contact"]
 const [displayFullPageMenu, ToggleFullMenu] = useState(false)
 const [showingPage, setShowingPage] = useState("Home")
 
 
 return (
     <div className="App">
-      { displayFullPageMenu && <FullPageMenu ToggleFullMenu={ToggleFullMenu} setShowingPage={setShowingPage}/>  }
-      <NavBar ToggleFullMenu={ToggleFullMenu}/>
+      { displayFullPageMenu && <FullPageMenu ToggleFullMenu={ToggleFullMenu} setShowingPage={setShowingPage} menuList={menuList}/>  }
+      <NavBar ToggleFullMenu={ToggleFullMenu} menuList={menuList}/>
       {showingPage}
       <Content />
       <HW1Content />
+      <Fotter />
     </div>
   );
 }
