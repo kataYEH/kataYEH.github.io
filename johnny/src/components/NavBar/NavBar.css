@@ -5,8 +5,10 @@
     display: flex;
     align-items: center;
     padding: 0 1rem;
-    /* width: 100%; */
-    position: relative;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    top: 0;
 }
 .Meun
 {

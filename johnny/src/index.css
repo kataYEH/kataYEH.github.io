@@ -1,11 +1,14 @@
 :root
 {
-  --Black : #222831;
-  --LightBlack : #393E46;
-  --Blue : #00ADB5;
-  --White: #eeeeee;
-  --Red : #FF2E63;
-  --Orange : #FFAA64;
+  --Black : #181818;
+  --LightBlack : #4a4d52;
+  --White: #fafcfb;
+  --Blue : #3181ed; 
+  --SkyBlue : #accbee;
+  --Green : #22ac61;
+  --Red : #f04042;
+  --Orange : #f3be24;
+  --Purple: #994fe5;
 }
 body {
   margin: 0;
@@ -39,6 +42,7 @@ code {
   min-width: 100%;
   position: relative;
   padding: 0;
+  padding-top: 3rem;
   /* border: 1px solid var(--Blue); */
 }
 

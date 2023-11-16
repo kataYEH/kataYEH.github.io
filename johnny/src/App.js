@@ -1,4 +1,4 @@
-import Homepage from './homepage/homepage';
+import Homepage from './homepage/Homepage';
 import NavBar from './components/NavBar/NavBar';
 import Fotter from './components/Fotter';
 import FullPageMenu from './components/FullPageMenu/FullPageMenu';
@@ -21,9 +21,10 @@ return (
     <div className="App">
       { displayFullPageMenu && <FullPageMenu ToggleFullMenu={ToggleFullMenu} setShowingPage={setShowingPage} menuList={menuList}/>  }
       <NavBar ToggleFullMenu={ToggleFullMenu} menuList={menuList}/>
-      {showingPage}
-      <Content />
-      <HW1Content />
+      {showingPage === "Home" && <Homepage />}
+      
+      {/* <Content /> */}
+      {/* <HW1Content /> */}
       <Fotter />
     </div>
   );
