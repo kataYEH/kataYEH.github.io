@@ -10,7 +10,7 @@ const Homepage = () => {
          <p class="mainHeading__preTitle">Hi, I'm</p>
          <h2 class="mainHeading__title">Johnny Yeh</h2>
          <p class="mainHeading__description">
-         "Hi, I'm Johnny, dedicated to developing AIoT integration systems for automated production lines and optimizing manufacturing processes globally."
+            "Hi, I'm Johnny, dedicated to developing AIoT integration systems for automated production lines and optimizing manufacturing processes globally."
          </p>
          {/* <button class="cta">know more</button> */}
       </article>
