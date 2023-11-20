@@ -1,29 +1,39 @@
 import React from 'react'
 import "./KnowMe.css"
-const KnowMe = () => {
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+library.add(fas, fab)
+
+const KnowMe = ({ myDeatilInfo, setMyDeatilInfo }) => {
+
+    const handleMyDetailInfo = (infoName) => {
+        setMyDeatilInfo(myDeatilInfo === infoName ? "none" : infoName);
+    };
+    const iconsInfo = [
+        { id: 'Gmail', icon: "fa-solid fa-envelope", color: "#ea4236" },
+        // { id: 'Phone', icon: "fa-solid fa-mobile-screen-button", color: "#2092ec" },
+        // { id: 'Line', icon: "fa-brands fa-line", color: "#06c253" },
+        { id: 'Bank104', icon: "fa-solid fa-building-columns", color: "#ffa74e" },
+        { id: 'Linkedin', icon: "fa-brands fa-linkedin", color: "#0077b5" },
+        { id: 'Github', icon: "fa-brands fa-github", color: "#000000" },
+        { id: 'Discord', icon: "fa-brands fa-discord", color: "#5c6af3" },
+    ];
     return (
-        <main>
-            <div class="frame">
-                <a href="#" class="btn">
-                    <i class="fab fa-facebook-f" style="color: #3b5998;"></i>
+        <main className='KnowMe'>
+            {iconsInfo.map(({ id, icon, color }) => (
+                <a 
+                    key={id} 
+                    className={`btn ${id === myDeatilInfo ? 'HightLight' : ''}`}
+                    id={id} 
+                    onClick={() => handleMyDetailInfo(id)}
+                >
+                    <FontAwesomeIcon icon={icon} style={{ color }} size="lg" />
                 </a>
-                <a href="#" class="btn">
-                    <i class="fab fa-twitter" style="color: #00acee;"></i>
-                </a>
-                <a href="#" class="btn">
-                    <i class="fab fa-dribbble" style="color: #ea4c89;"></i>
-                </a>
-                <a href="#" class="btn">
-                    <i class="fab fa-linkedin-in" style="color:#0e76a8;"></i>
-                </a>
-                <a href="#" class="btn">
-                    <i class="fab fa-get-pocket" style="color:#ee4056;"></i>
-                </a>
-                <a href="#" class="btn">
-                    <i class="far fa-envelope"></i>
-                </a>
-            </div>
+            ))}
         </main>
+
     )
 }
 

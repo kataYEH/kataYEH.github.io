@@ -1,0 +1,27 @@
+.InfoBoxWithCopy
+{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.InfoBoxWithCopy a
+{
+    font-size: large;
+    overflow-wrap: anywhere;
+
+}
+.CopyButton
+{
+    font-size: large;
+    padding: .5rem;
+    border-radius: .5rem;
+    background-color: rgb(0,0,0,.1);
+    color: gray;
+    cursor: pointer;
+}
+.CopyButton:hover
+{
+    background-color: rgb(0,0,0,.3);
+    color: white;
+}

@@ -2,20 +2,22 @@
  .Homepage {
 	 width: 100%;
 	 height: 100%;
+	 min-height: 600px;
 	 position: relative;
 	 padding: 0 40px;
 	 background-image: linear-gradient(to top, var(--SkyBlue) 0%, var(--White) 100%);
-	 overflow: hidden;
+	 overflow-y: auto;
 }
  @media screen and (max-width: 500px) {
 	 .Homepage {
 		 padding: 0 20px;
 	}
 }
+
  .Homepage__content {
 	 /* max-width: 1110px; */
 	 width: 80%;
-
+	height: 90%;
 	 min-height: 600px;
 	 left: 50%;
 	 transform: translateX(-50%);
@@ -34,7 +36,7 @@
 	 color: #637498;
 	 background-color: rgba(255, 255, 255, 0.2);
 	 padding: 40px;
-	 margin-top: 100px;
+	 /* margin-top: 100px; */
 	 width: 60%;
 	 backdrop-filter: blur(8px);
 	 animation: text 0.8s 0.6s ease backwards;
@@ -92,8 +94,10 @@
 }
  .mainHeading__description {
 	 letter-spacing: 0.5px;
-	 font-size: 16px;
+	 font-size: 1.2rem;
 	 line-height: 26px;
+	
+
 }
  @media screen and (max-width: 500px) {
 	 .mainHeading__description {
@@ -111,13 +115,17 @@
 	 position: absolute;
 	 overflow: hidden;
 	 animation: image 0.6s 0.2s ease backwards;
+	 display: flex;
+	 align-items: center;
 }
  @media screen and (max-width: 500px) {
 	 .Homepage__image {
-		 height: 85%;
+		 height: 80%;
 		 width: 80%;
 		 transform: translatey(80px);
 		 right: -25%;
+		 display: flex;
+		 align-items: center;
 	}
 }
  @keyframes image {
@@ -152,8 +160,8 @@
 	 opacity: 0.2;
 }
  .Homepage__image img {
-	 width: 100%;
-	 height: 100%;
+	 max-width: 100%;
+	 max-height: 100%;
 }
  .cta {
 	 padding: 16px 32px;

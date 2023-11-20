@@ -1,4 +1,4 @@
-import Homepage from './homepage/Homepage';
+import Homepage from './homepage/homepage';
 import NavBar from './components/NavBar/NavBar';
 import Fotter from './components/Fotter';
 import FullPageMenu from './components/FullPageMenu/FullPageMenu';
@@ -19,13 +19,22 @@ const [showingPage, setShowingPage] = useState("Home")
 
 return (
     <div className="App">
-      { displayFullPageMenu && <FullPageMenu ToggleFullMenu={ToggleFullMenu} setShowingPage={setShowingPage} menuList={menuList}/>  }
-      <NavBar ToggleFullMenu={ToggleFullMenu} menuList={menuList}/>
+      { displayFullPageMenu && <FullPageMenu 
+          ToggleFullMenu={ToggleFullMenu} 
+          setShowingPage={setShowingPage} 
+          menuList={menuList}
+        />  
+      }
+      <NavBar 
+        ToggleFullMenu={ToggleFullMenu} 
+        menuList={menuList} 
+        setShowingPage={setShowingPage}
+      />
       {showingPage === "Home" && <Homepage />}
       
       {/* <Content /> */}
       {/* <HW1Content /> */}
-      <Fotter />
+      {/* <Fotter /> */}
     </div>
   );
 }
