@@ -1,0 +1,20 @@
+.TextContent
+{
+    flex:1;
+    padding: 2rem;
+    background-color: rgb(255,255,255,.2);
+    
+}
+.blank
+{
+    padding: 1px 1rem;
+}
+.TextContent-Title
+{
+    padding: 0rem 1rem 1rem 0rem;
+    color: var(--Black);
+}
+.TextContent-P
+{
+    padding: 0rem 1rem 1rem 0rem;
+}

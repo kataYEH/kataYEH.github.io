@@ -2,7 +2,10 @@ import Homepage from './homepage/homepage';
 import NavBar from './components/NavBar/NavBar';
 import Fotter from './components/Fotter';
 import FullPageMenu from './components/FullPageMenu/FullPageMenu';
+import AboutMe from './AboutMe/AboutMe';
 import HW1Content from './HW1/HW1Content';
+
+
 
 import { useState } from 'react';
 
@@ -12,7 +15,7 @@ import { useState } from 'react';
 import Content from './learn/Content';
 
 function App() {
-const menuList = ["Home","About","Skills","Contact"]
+const menuList = ["Home","About Me","Skills","Contact"]
 const [displayFullPageMenu, ToggleFullMenu] = useState(false)
 const [showingPage, setShowingPage] = useState("Home")
 
@@ -30,8 +33,10 @@ return (
         menuList={menuList} 
         setShowingPage={setShowingPage}
       />
-      {showingPage === "Home" && <Homepage />}
-      
+      <Homepage />
+      <AboutMe />
+      {/* {showingPage === "Home" && <Homepage />} */}
+      {/* {showingPage === "About Me" && <AboutMe />} */}
       {/* <Content /> */}
       {/* <HW1Content /> */}
       {/* <Fotter /> */}

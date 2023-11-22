@@ -1,0 +1,29 @@
+.InfoList
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(255,255,255,.1);
+}
+.InfoItem
+{
+    list-style: none;
+    padding: .5rem 1rem;
+    display: flex;
+}
+.InfoItem-Title
+{
+
+}
+.InfoItem-Title
+{
+    min-width: 8rem;
+    font-weight: bold;
+    color: var(--LightBlack);
+    /* padding: 1rem; */
+}
+/* .InfoItem-Name::before
+{
+    content: ":";
+    margin: 5px;
+} */

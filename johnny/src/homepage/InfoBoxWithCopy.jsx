@@ -24,7 +24,7 @@ const InfoBoxWithCopy = ({infoValue}) => {
 
 
         toast.info('🦄 已複製到剪貼板！', {
-            position: "top-center",
+            position: "bottom-center",
             autoClose: 1000,
             hideProgressBar: false,
             closeOnClick: true,

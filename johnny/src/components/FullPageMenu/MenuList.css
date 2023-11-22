@@ -4,6 +4,8 @@
   display: inline-flex;
   flex-direction: column;
   overflow: auto;
+  list-style-type: none;
+
 }
 /* Style the scrollbar */
 .MenuList::-webkit-scrollbar {
@@ -29,3 +31,6 @@
 {
   background-color: rgb(255,255,255,.3);
 }
+
+
+
