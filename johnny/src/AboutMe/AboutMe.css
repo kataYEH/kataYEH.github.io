@@ -7,10 +7,10 @@
     display: flex;
     align-items: center;
     gap: 4rem;
-	background-image: linear-gradient(to top, var(--White) 0%, var(--SkyBlue) 100%);
+	background-image: linear-gradient(to top, var(--SkyBlue_) 0%, var(--SkyBlue) 100%);
     
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
 	.AboutMe {
 		flex-direction: column;
         padding: 4rem;

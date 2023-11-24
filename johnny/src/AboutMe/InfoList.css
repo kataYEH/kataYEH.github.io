@@ -17,7 +17,7 @@
 }
 .InfoItem-Title
 {
-    min-width: 8rem;
+    min-width: 10rem;
     font-weight: bold;
     color: var(--LightBlack);
     /* padding: 1rem; */

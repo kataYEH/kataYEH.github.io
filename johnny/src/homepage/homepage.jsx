@@ -11,7 +11,7 @@ const Homepage = () => {
    const [myDeatilInfo, setMyDeatilInfo] = useState("none")
 
    return (
-      <main className="Homepage">
+      <main className="Homepage" id="Home">
          <div className="Homepage-Content">
             <div className="Homepage-MyInfo">
                <p className="Homepage-Title-Mid">Hi, I'm</p>

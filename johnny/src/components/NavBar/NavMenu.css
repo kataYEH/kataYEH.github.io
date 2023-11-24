@@ -1,0 +1,14 @@
+.NavMenu
+{
+    display: flex;
+    gap:1rem;
+    flex: 1;
+    align-items: center;
+    justify-content: end;
+}
+.NavMenu a
+{
+    font-size: large;
+    color: white;
+    cursor: pointer;
+}

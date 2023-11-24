@@ -1,11 +1,25 @@
 .MenuList
 {
   height: 90%;
-  display: inline-flex;
-  flex-direction: column;
+  /* width: 100%; */
+  /* display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column; */
+  gap: 3rem;
   overflow: auto;
   list-style-type: none;
+  padding: 1.5rem 5rem;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr)); */
+  /* gap: 5rem; */
 
+}
+@media screen and (max-width: 550px) {
+	.MenuList {
+    /* grid-template-columns: 1fr; */
+  padding: 1.5rem 2rem;
+
+   }
 }
 /* Style the scrollbar */
 .MenuList::-webkit-scrollbar {

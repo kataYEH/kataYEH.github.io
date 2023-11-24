@@ -3,11 +3,12 @@ import "./MenuList.css"
 import GlitchText from './GlitchText'
 import BubbleButton from './BubbleButton'
 
-const MenuList = ({ setShowingPage, handleCloseMenu, menuList }) => {
+const MenuList = ({ setShowingPage, handleCloseMenu, menuList ,scrollToPage}) => {
     console.log(menuList)
     const handleShowing = (item) => {
         // 切换动画状态
         setShowingPage(item)
+        scrollToPage(item)
     };
     return (
         <main className='MenuList'>
@@ -25,7 +26,7 @@ const MenuList = ({ setShowingPage, handleCloseMenu, menuList }) => {
                     key={index} // 確保每個元素都有唯一的 key
                     itemName={itemName}
                     handleShowing={handleShowing}
-                    handleCloseMenu={handleCloseMenu}
+                    handleCloseMenu={handleCloseMenu} 
                 />
             ))}
         </main>

@@ -25,8 +25,8 @@ const TextContent = () => {
             Hi, I'm <HT t="Johnny" />,
             a 
             <HT t="software engineer"/>.
-            I have two years of experience in both front-end and back-end web development.
-            I am proficient in programming languages such as 
+            Two years of experience in both front-end and back-end web development.
+            Proficient in programming languages such as 
             <HT t =" Python"/>, 
             <HT t =" Javascript"/>, 
             <HT t =" HTML"/> and 
@@ -38,7 +38,7 @@ const TextContent = () => {
 
             Over the past two years, 
             I've been dedicated to developing the company's 
-            <HT t='"Automated Production Line AIoT Integration System"'/>. 
+            <HT t='" Automated Production Line AIoT Integration System"'/>. 
             Primarily responsible for web service application development and related microservices. 
             Currently, it's running smoothly in factories located in Shanghai, Suzhou, and Mexico.
         </p>

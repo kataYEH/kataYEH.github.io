@@ -3,7 +3,7 @@ import './FullPageMenu.css'
 import CloseButton from './CloseButton';
 import MenuList from './MenuList';
 
-const FullPageMenu = ({ ToggleFullMenu ,setShowingPage, menuList}) => {
+const FullPageMenu = ({ ToggleFullMenu ,setShowingPage, menuList, scrollToPage}) => {
   const [isAnimatingOut, setIsAnimatingOut] = useState(false);
 
   const handleCloseMenu = () => {
@@ -23,7 +23,12 @@ const FullPageMenu = ({ ToggleFullMenu ,setShowingPage, menuList}) => {
   return (
     <main className={`FullPageMenu animate__animated ${isAnimatingOut ? 'animate__fadeOutTopLeft' : 'animate__fadeInTopLeft'}`}>
       <CloseButton handleCloseMenu={handleCloseMenu} />
-      <MenuList setShowingPage={setShowingPage} handleCloseMenu={handleCloseMenu} menuList={menuList}/>
+      <MenuList 
+        setShowingPage={setShowingPage} 
+        handleCloseMenu={handleCloseMenu} 
+        menuList={menuList}
+        scrollToPage = {scrollToPage}
+      />
     </main>
   );
 }

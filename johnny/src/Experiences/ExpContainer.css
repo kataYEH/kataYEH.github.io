@@ -1,0 +1,112 @@
+.ExpContainer
+{
+    padding: 1rem 0;
+    height: auto;
+    width: 100%;
+    max-width: 80rem;
+    border-top: 2px solid var(--Blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+}
+.Exp-top,
+.Exp-buttom
+{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+@media screen and (max-width: 550px) {
+    .Exp-top,
+    .Exp-buttom
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.Exp-BelongTo,
+.Exp-Infomation
+{
+    width: 30%;
+    min-width: 15rem;
+    max-width: 30rem;
+    display: flex;
+    gap: 1rem;
+}
+@media screen and (max-width: 550px) {
+    .Exp-BelongTo,
+    .Exp-Infomation
+    {
+        width: 30%;
+    }
+}
+.Exp-Position,
+.Exp-Content
+{
+    flex:1;
+    display: flex;
+    gap: 1rem;
+
+}
+@media screen and (max-width: 550px) {
+    .Exp-Position,
+    .Exp-Content
+    {
+        flex-direction: column;
+    }
+}
+.Exp-Infomation
+{
+    flex-direction: column;
+}
+.Exp-Time
+{
+    padding-left: 2.5rem;
+}
+.Exp-Infomation img
+{
+    margin-left: 2rem;
+    max-width: calc(100% - 4rem);
+    max-height: calc(100% - 2rem);
+}
+.Exp-Content
+{
+    flex-direction: column;
+}
+
+.Exp-TypeIcon,
+.Exp-TypeName
+{
+    font-size: large;
+}
+.Exp-TypeName
+{
+    color: var(--Black);
+    font-weight: bold;
+}
+.Exp-TypeIcon
+{
+    color: var(--Blue);
+
+}
+.Exp-PositionName
+{
+    font-size: large;
+    color: var(--Black);
+    font-weight: bold;
+}
+@media screen and (max-width: 550px) {
+    .Exp-PositionName
+    {
+        padding-left: 2.5rem;
+    }
+}
+.Exp-Content p
+{
+    text-indent: 2em;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
