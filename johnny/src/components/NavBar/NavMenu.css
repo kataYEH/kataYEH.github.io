@@ -1,14 +1,43 @@
-.NavMenu
-{
+.NavMenu {
     display: flex;
-    gap:1rem;
+    gap: 1.5rem;
     flex: 1;
     align-items: center;
-    justify-content: end;
+    justify-content: end;padding: 1rem;
 }
-.NavMenu a
-{
+@media screen and (max-width: 700px) {
+	.NavMenu {
+        display: none;
+
+   }
+   
+}
+.NavMenu a {
     font-size: large;
     color: white;
     cursor: pointer;
+}
+
+.NavMenu a {
+
+    text-decoration: none;
+}
+
+.NavMenu a {
+    background:
+        linear-gradient(to right,
+            var(--Black),
+            var(--SkyBlue)),
+        linear-gradient(to right,
+            var(--White),
+            var(--SkyBlue),
+            var(--Blue));
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 105%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+.NavMenu a:hover {
+    background-size: 0 3px, 100% 3px;
 }

@@ -1,0 +1,19 @@
+.FullPageDialog
+{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0,0,0,.85);
+    top: 0;
+    left: 0;
+    z-index: 99;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+.animate__animated
+{
+  --animate-duration: .8s;
+}

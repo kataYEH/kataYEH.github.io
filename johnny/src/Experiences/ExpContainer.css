@@ -17,6 +17,7 @@
     width: 100%;
     display: flex;
     gap: 1rem;
+    
 }
 @media screen and (max-width: 550px) {
     .Exp-top,
@@ -112,4 +113,11 @@
     text-indent: 2em;
     font-size: 1.1rem;
     line-height: 1.7rem;
+}
+
+
+.Exp-DetailDialog
+{
+    display: flex;
+    flex-direction: column;
 }

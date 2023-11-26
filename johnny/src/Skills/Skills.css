@@ -1,0 +1,21 @@
+.Skills
+{
+    width: 100%;
+    height: auto;
+    padding: 0rem 6rem;
+    background-color: var(--SkyBlue_);
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+
+}
+@media screen and (max-width: 550px) {
+	.Skills {
+		flex-direction: column;
+        padding: 0rem 3rem;
+
+   }
+   
+}

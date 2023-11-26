@@ -1,9 +1,17 @@
 import React from 'react'
 import "./NavMenu.css"
-const NavMenu = ({menuList}) => {
+const NavMenu = ({menuList,setShowingPage,scrollToPage}) => {
+  const handleShowing = (item) => {
+    // 切换动画状态
+    setShowingPage(item)
+    scrollToPage(item)
+};
+
   return (
     <main className='NavMenu'>
-        {menuList.map((item)=>(<a>{item}</a>))}
+        {menuList.map((item)=>(<a onClick={()=>{
+        handleShowing(item)
+      }}>{item}</a>))}
     </main>
   )
 }
