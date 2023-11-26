@@ -71,6 +71,9 @@
     margin-left: 2rem;
     max-width: calc(100% - 4rem);
     max-height: calc(100% - 2rem);
+    opacity: .85;
+    border-radius: .5rem;
+    box-shadow: -5px 10px 10px 1px rgba(0, 0, 0, 0.55);
 }
 .Exp-Content
 {
@@ -108,5 +111,5 @@
 {
     text-indent: 2em;
     font-size: 1.1rem;
-    line-height: 1.5rem;
+    line-height: 1.7rem;
 }

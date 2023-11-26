@@ -44,7 +44,8 @@ const ExpContainer = ({BelongTo,Position,Infomation,Content}) => {
                 />
                 </div>
                 <div className='Exp-Content'>
-                    <p>{Content.name}</p>
+                    {Content.name.map(item=>(<p>{item}</p>))}
+                    {/* <p>{Content.name}</p> */}
 
                 </div>
             </buttom>

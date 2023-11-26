@@ -21,12 +21,11 @@ const TextContent = () => {
             等程式語言．
         </p> */}
         <p className='TextContent-P'>
-            <a className='blank'></a>
             Hi, I'm <HT t="Johnny" />,
             a 
-            <HT t="software engineer"/>.
+            <HT t=" software engineer"/>.
             Two years of experience in both front-end and back-end web development.
-            Proficient in programming languages such as 
+            Good at programming languages such as 
             <HT t =" Python"/>, 
             <HT t =" Javascript"/>, 
             <HT t =" HTML"/> and 
@@ -34,7 +33,6 @@ const TextContent = () => {
             
         </p>
         <p className='TextContent-P'>
-            <a className='blank'></a>
 
             Over the past two years, 
             I've been dedicated to developing the company's 
