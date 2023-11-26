@@ -8,11 +8,11 @@ library.add(fas, fab)
 
 
 
-const SkillCard = ({cardIcon,cardTitle,cardTags,cardContents}) => {
+const SkillCard = ({cardIcon,cardTitle,cardTags,cardContents,color="var(--Blue)"}) => {
   return (
     <main className='SkillCard'>
-        <div className='Card-Logo'>
-            <FontAwesomeIcon icon={cardIcon} className='Card-LogoIcon'/>
+        <div className='Card-Logo' style={{borderColor:color}}>
+            <FontAwesomeIcon icon={cardIcon} className='Card-LogoIcon' style={{color:color}}/>
         </div>
         <div className='Card-Title'>
             <a>{cardTitle}</a>
