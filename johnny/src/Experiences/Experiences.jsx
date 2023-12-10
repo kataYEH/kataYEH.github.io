@@ -2,10 +2,11 @@ import React, { useState } from 'react'
 import "./Experiences.css"
 import ExpContainer from './ExpContainer'
 
-import PEGA from '../images/PEGA.png';
+import PEGA_Image from '../images/PEGA.png';
 import ThreeSchool from '../images/threeSchool.png';
 import AA702_1 from '../images/AA702-1.png';
 
+import PEGA from './Exp_Detail/PEGA';
 
 const Experiences = () => {
     const [myExperience, setMyExperience] = useState([
@@ -15,11 +16,11 @@ const Experiences = () => {
                 name: "PEGATRONCORP"
             },
             Position: {
-                name: "Sofeware Engineer"
+                name: "Software Engineer"
             },
             Infomation: {
-                name: "2023/09 - Now",
-                img: PEGA
+                name: "2021/09 - Now",
+                img: PEGA_Image
             },
             Content: {
                 name:[ `Dedicated to developing an 'Automated Production Line AIoT Integration System,' 
@@ -36,7 +37,8 @@ const Experiences = () => {
                 
                 ]
 
-            }
+            },
+            Detail:<PEGA />
         },
         {
             BelongTo: {
@@ -57,7 +59,8 @@ const Experiences = () => {
                 ,
                 `Sharing knowledge is a joyful endeavor. I transformed my knowledge and problem-solving experiences into engaging stories and courses, sharing them with my students. 
                 My goal was to instill a joyful approach to learning programming languages and aspire to become their guide in the world of coding.`]
-            }
+            },
+            Detail:"新北市立三峽國中"
         },
         {
             BelongTo: {
@@ -81,7 +84,8 @@ const Experiences = () => {
                 I accumulated experience in problem-solving and handling situations on the spot. 
                 Additionally, being the team captain, 
                 I learned extensively about delegation, team training, and effective communication within a group.`]
-            }
+            },
+            Detail:"MinChuan University - Robotics Research Center"
         }
     ])
 
@@ -102,6 +106,7 @@ const Experiences = () => {
                     Position={item.Position}
                     Infomation={item.Infomation}
                     Content={item.Content}
+                    Detail={item.Detail}
                 />
             ))}
 

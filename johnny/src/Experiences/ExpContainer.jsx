@@ -3,6 +3,7 @@ import Modal from 'react-modal';
 
 import "./ExpContainer.css"
 import ReadMore from './ReadMore';
+import CloseButton from './CloseButton';
 // Icon
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -10,7 +11,7 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 library.add(fas, fab)
 
-const ExpContainer = ({ BelongTo, Position, Infomation, Content }) => {
+const ExpContainer = ({ BelongTo, Position, Infomation, Content, Detail}) => {
     Modal.setAppElement('#root');
 
 
@@ -81,24 +82,28 @@ const ExpContainer = ({ BelongTo, Position, Infomation, Content }) => {
                     },
                     content: {
                       position: 'absolute',
-                      top: '40px',
-                      left: '40px',
-                      right: '40px',
-                      bottom: '40px',
+                      top: '5rem',
+                      left: '2rem',
+                      right: '2rem',
+                      bottom: '2rem',
                       border: '1px solid #ccc',
                       background: '#fff',
                       overflow: 'auto',
                       WebkitOverflowScrolling: 'touch',
-                      borderRadius: '4px',
+                      borderRadius: '.5rem',
                       outline: 'none',
-                      padding: '20px',
-                      backgroundColor: '#e3edf7'
+                      padding: '.5rem',
+                      backgroundColor: '#e3edf7',                    
+                      height: "fin-content"
                     }
                   }}
             >
                 <div className='Exp-DetailDialog'>
-                    <button onClick={handleCloseModal}>關閉對話框</button>
-                    <h1>Sorry, it's not finished yet, please forgive me.</h1>
+                    <CloseButton handleClick={handleCloseModal}/>
+                    {Detail}
+                    <div className='DetailDialogContainer'>
+                        
+                    </div>
                 </div>
             </Modal>
 

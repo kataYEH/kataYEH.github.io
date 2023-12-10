@@ -19,7 +19,7 @@ const SkillCard = ({cardIcon,cardTitle,cardTags,cardContents,color="var(--Blue)"
         </div>  
         <div className='Card-Tags'>
             {
-                cardTags.map((item)=>(<span>{item}</span>))
+                cardTags.map((item)=>(<span className='Tag'>{item}</span>))
             }
 
         </div>  

@@ -2,11 +2,11 @@
 {
     width: 100%;
     height: auto;
-    padding: 0rem 6rem;
+    padding: 3rem 6rem;
     background-color: var(--SkyBlue_);
     display: inline-flex;
     flex-wrap: wrap;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-around;
     gap: 2rem;
 

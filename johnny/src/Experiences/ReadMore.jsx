@@ -16,8 +16,8 @@ const ReadMore = ({handleClick}) => {
                 </div>
             </span>
             <div class="link-icon">
-            <FontAwesomeIcon icon="fa-brands fa-readme" className='icon'/>
-            <FontAwesomeIcon icon="fa-solid fa-right-long" className='icon'/>
+                <FontAwesomeIcon icon="fa-brands fa-readme" className='icon'/>
+                <FontAwesomeIcon icon="fa-solid fa-right-long" className='icon'/>
 
             </div>
         </a>
